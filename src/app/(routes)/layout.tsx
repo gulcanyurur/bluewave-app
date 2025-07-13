@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-const Routeslayout = () => {
-  return (
-    <div>
-      Routeslayout
-    </div>
-  )
+interface RoutesLayoutProps {
+  children: React.ReactNode;
 }
 
-export default Routeslayout
+const RoutesLayout = ({ children }: RoutesLayoutProps) => {
+  return (
+    <div>
+      header
+      {children}
+      Footer
+    </div>
+  );
+};
+
+export default RoutesLayout;
+
